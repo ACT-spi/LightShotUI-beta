@@ -1,0 +1,39 @@
+.input-text {
+    padding: 10px;
+    border: #97ceff solid 1px;
+    width: 500px;
+    border-radius: 15px;
+    font-family: Inter, Helvetica, 'PingFang SC', 'Helvetica Neue' ,'Microsoft YaHei UI','微软雅黑', 'Arial',sans-serif;
+}
+
+.input-text:hover {
+    border-color: #80c6ff;
+}
+
+.input-text:focus {
+    outline: none;
+    border: #5eb6ff solid 2px;
+    border-radius: 15px;
+}
+
+.input-parent {
+    display: inline-block;
+}
+
+.labels {
+    position: absolute;
+    top: 0;
+    font-size: 15px;
+    left: 19px;
+    background-color: rgba(255,255,255,1);
+    z-index: 1;
+    color: #7e7e7e;
+    border: rgba(256,256,256,1) solid 1px;
+    transition: all 0.2s ease;
+}
+
+.input-text:focus + .labels,
+.input-text:not(:placeholder-shown) + .labels {
+    top: -10px;
+    font-size: 10px;
+}

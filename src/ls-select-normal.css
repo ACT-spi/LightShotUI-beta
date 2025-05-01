@@ -1,0 +1,44 @@
+.select-parent {
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    border: 1px solid #80c6ff;
+    cursor: pointer;
+    position: relative;
+}
+
+#select-sign {
+    position: absolute;
+    right: 14px;
+    top: 5px;
+    transition: all 0.2s ease;
+    user-select: none;
+    transform: rotate(0deg);
+}
+
+#select-box {
+    max-height: 300px;
+    width: 100px;
+    overflow-y: auto;
+    margin-top: 10px;
+    border: 1px solid #80c6ff;
+    border-radius: 15px;
+    transition: max-height 0.2s ease;
+}
+
+.select-text {
+    user-select: none;
+    margin: 0;
+    font-family: Inter, Helvetica, 'PingFang SC', 'Helvetica Neue' ,'Microsoft YaHei UI','微软雅黑', 'Arial',sans-serif;
+}
+
+.select-item {
+    cursor: pointer;
+    margin: 7px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+.select-item:hover {
+    background-color: lightgray;
+}
